@@ -1,7 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        BankAccount clientAccount = new BankAccount(15000);
+        BankAccount clientAccount = new BankAccount(0);
+        clientAccount.deposit(15000);
         while (true) {
             try {
                 clientAccount.withdraw(6000);
